@@ -243,6 +243,14 @@
   .wip-go { font-family: var(--mono); font-size: 11.5px; color: var(--accent-2); white-space: nowrap; }
   @media (max-width: 560px) { .wip { flex-wrap: wrap; } .wip-go { width: 100%; } }
 
+  /* apps manifest — wall of shipped apps */
+  .manifest-intro { color: var(--muted); font-size: 15px; max-width: 62ch; margin: -10px 0 24px; }
+  .manifest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); gap: 10px; }
+  .mtile { background: linear-gradient(180deg, var(--surface), var(--bg-2)); border: 1px solid var(--hairline); border-radius: 10px; padding: 13px 15px; transition: border-color .15s; }
+  .mtile:hover { border-color: var(--hairline-2); }
+  .mtile .n { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; }
+  .mtile .m { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--faint); margin-top: 6px; }
+
   /* ---------- footer ---------- */
   .footer { border-top: 1px solid var(--hairline); padding: 56px 0 60px; }
   .foot-grid { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
@@ -392,7 +400,7 @@
       <div class="hero-grid">
         <div>
           <span class="chan"><span class="led"></span><span class="num">SEC.01</span> · <span class="i18n" data-es="identidad" data-en="identity">identidad</span></span>
-          <h1 class="i18n" data-es="Construyo apps iOS sólidas y <span class='accent'>reduzco sus errores</span>." data-en="I build solid iOS apps and <span class='accent'>cut their errors</span>.">Construyo apps iOS sólidas y <span class="accent">reduzco sus errores</span>.</h1>
+          <h1 class="i18n" data-es="Creador de aplicaciones móviles con experiencia en <span class='accent'>grandes marcas</span>." data-en="Mobile app developer with experience at <span class='accent'>major brands</span>.">Creador de aplicaciones móviles con experiencia en <span class="accent">grandes marcas</span>.</h1>
           <p class="lead i18n" data-es="Soy Luis Daniel Coria — desarrollador iOS con 8+ años en equipos internacionales. Mi especialidad: entrar a bases de código difíciles, entenderlas y dejarlas sólidas — de Objective-C a SwiftUI." data-en="I'm Luis Daniel Coria — an iOS developer with 8+ years on international teams. My specialty: stepping into hard codebases, understanding them, and leaving them solid — from Objective-C to SwiftUI.">Soy Luis Daniel Coria — desarrollador iOS con 8+ años en equipos internacionales. Mi especialidad: entrar a bases de código difíciles, entenderlas y dejarlas sólidas — de Objective-C a SwiftUI.</p>
           <div class="cta-row">
             <a class="btn primary" href="#apps"><span class="i18n" data-es="ver releases" data-en="see releases">ver releases</span> <span aria-hidden="true">→</span></a>
@@ -589,6 +597,33 @@
           <div class="wip-title">Grupo Constructor Misol <span class="wip-badge i18n" data-es="en construcción" data-en="building">en construcción</span></div>
           <div class="wip-sub i18n" data-es="Landing web para una empresa de renta de maquinaria y movimiento de tierra — diseño y desarrollo, en curso." data-en="Web landing for a heavy-machinery rental & earthworks company — design & development, in progress.">Landing web para una empresa de renta de maquinaria y movimiento de tierra — diseño y desarrollo, en curso.</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPS MANIFEST -->
+  <section class="sec" id="manifest">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="i18n" data-es="Apps en las que participé" data-en="Apps I've shipped">Apps en las que participé</h2>
+        <span class="chan"><span class="led"></span><span class="num">SEC.05·b</span> · <span class="i18n" data-es="14 despliegues · iOS / tvOS" data-en="14 deployments · iOS / tvOS">14 despliegues · iOS / tvOS</span></span>
+      </div>
+      <p class="manifest-intro i18n" data-es="Aplicaciones iOS y tvOS que entregué para clientes internacionales de media y entretenimiento a lo largo de mi carrera." data-en="iOS and tvOS apps I helped ship for international media & entertainment clients across my career.">Aplicaciones iOS y tvOS que entregué para clientes internacionales de media y entretenimiento a lo largo de mi carrera.</p>
+      <div class="manifest-grid">
+        <div class="mtile"><div class="n">Cinépolis</div><div class="m">iOS · IA Interactive</div></div>
+        <div class="mtile"><div class="n">Bell Media</div><div class="m">iOS · tvOS · Accedo</div></div>
+        <div class="mtile"><div class="n">Quibi</div><div class="m">iOS · tvOS · Accedo</div></div>
+        <div class="mtile"><div class="n">Equinox</div><div class="m">iOS · Accedo</div></div>
+        <div class="mtile"><div class="n">Sensical</div><div class="m">tvOS · Accedo</div></div>
+        <div class="mtile"><div class="n">Buzzer</div><div class="m">iOS · Accedo</div></div>
+        <div class="mtile"><div class="n">Cogeco</div><div class="m">iOS · tvOS · Accedo</div></div>
+        <div class="mtile"><div class="n">SBT+</div><div class="m">iOS · tvOS · Accedo</div></div>
+        <div class="mtile"><div class="n">Plans</div><div class="m">iOS · Pixan</div></div>
+        <div class="mtile"><div class="n">Legit</div><div class="m">iOS · Pixan</div></div>
+        <div class="mtile"><div class="n">Beacons</div><div class="m">iOS · Pixan</div></div>
+        <div class="mtile"><div class="n">Party On</div><div class="m">iOS · Pixan</div></div>
+        <div class="mtile"><div class="n">Homade</div><div class="m">iOS · Pixan</div></div>
+        <div class="mtile"><div class="n">Priver</div><div class="m">iOS · Pixan</div></div>
       </div>
     </div>
   </section>
